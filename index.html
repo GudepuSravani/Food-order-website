@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Order Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Food Order Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Cart</a>
+      <a href="#">Offers</a>
+      <a href="#">Help</a>
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <h2>Order our best food options</h2>
+    <div class="food-container">
+      <div class="food-item">
+        <img src="https://recipesblob.oetker.in/assets/c8f69e58cfc5442e856f28d1f197de4f/1272x764/maharaja-burger.webp" alt="Burger">
+        <h3>burger</h3>
+        <p>Price: ₹120</p>
+        <button onclick="addToCart('Burger', 120)">Add to Cart</button>
+      </div>
+      <div class="food-item">
+        <img src="https://images.ctfassets.net/j8tkpy1gjhi5/5OvVmigx6VIUsyoKz1EHUs/b8173b7dcfbd6da341ce11bcebfa86ea/Salami-pizza-hero.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Price: ₹250</p>
+        <button onclick="addToCart('Pizza', 250)">Add to Cart</button>
+      </div>
+      <div class="food-item">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/05/masala-pasta.jpg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p>Price: ₹150</p>
+        <button onclick="addToCart('Pasta', 150)">Add to Cart</button>
+      </div>
+    
+      
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-list"></ul>
+    <p id="total">Total: ₹0</p>
+    <button id="order-btn">Place Order</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

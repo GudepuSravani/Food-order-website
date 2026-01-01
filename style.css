@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+
+/* Header */
+header {
+   
+  background: #ff6347;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.h1{
+    text-align: right  ;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Menu Section */
+.menu {
+  padding: 20px;
+  text-align: center;
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.food-item, .Food-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 200px;
+  text-align: center;
+}
+
+.food-item img, .Food-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-item button, .Food-item button {
+  background: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.food-item button:hover, .Food-item button:hover {
+  background: #e5533d;
+}
+
+/* Cart Section */
+.cart {
+  padding: 20px;
+  background: #fff8f0;
+  text-align: center;
+  border-top: 3px solid #ff6347;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-list li {
+  margin: 5px 0;
+}
+
+#order-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#order-btn:hover {
+  background: #218838;
+}
+/* Food Item Card */
+.food-item {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+/* Food images */
+.food-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Title (Shawarma / Fries) */
+.food-item h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Price */
+.food-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #9f3189;
+}
+
+/* Add to Cart Button */
+.food-item button {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.food-item button:hover {
+  background: #e5533d;
+}
+/* Food Item Card */
+.food-item {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+/* Food images */
+.food-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Title (Shawarma / Fries) */
+.food-item h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Price */
+.food-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+/* Add to Cart Button */
+.food-item button {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.food-item button:hover {
+  background: #e5533d;
+}
+.food-container {
+  display: flex;              /* Align children side by side */
+  justify-content: center;    /* Center them horizontally */
+  gap: 20px;                  /* Space between cards */
+  margin-top: 20px;
+}
+
+.food-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+.food-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.food-item h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.food-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.food-item button {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.food-item button:hover {
+  background: #e5533d;
+}
