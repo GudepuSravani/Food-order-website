@@ -25,7 +25,7 @@ header nav a {
   font-weight: bold;
 }
 
-/* Menu Section */
+ Menu Section */
 .menu {
   padding: 20px;
   text-align: center;
@@ -262,4 +262,44 @@ header nav a {
 
 .food-item button:hover {
   background: #e5533d;
+}
+
+.header {
+    background: tomato;
+    padding: 15px;
+    text-align: center;
+}
+
+.header h1 {
+    color: white;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu, .cart {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item, .cart {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background: tomato;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
