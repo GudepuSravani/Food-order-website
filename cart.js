@@ -1,31 +1,24 @@
-function addToCart(name, price) {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+function loadCart() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartItemsDiv = document.getElementById("cart-items");
+    let total = 0;
 
-  cart.push({ name, price });
+    cartItemsDiv.innerHTML = "";
 
-  localStorage.setItem("cart", JSON.stringify(cart));
+    cart.forEach(item => {
+        let div = document.createElement("div");
+        div.className = "cart-item";
+        div.innerHTML = `${item.name} - ₹${item.price}`;
+        cartItemsDiv.appendChild(div);
+        total += item.price;
+    });
 
-  // Redirect to cart page
-  window.location.href = "cart.html";
+    document.getElementById("total-price").innerText =
+        "Total Price: ₹" + total;
 }
 
-function displayCart() {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  let cartItems = document.getElementById("cartItems");
-  let total = 0;
-
-  cartItems.innerHTML = "";
-
-  cart.forEach(item => {
-    cartItems.innerHTML += `
-      <p>${item.name} - ₹${item.price}</p>
-    `;
-    total += item.price;
-  });
-
-  document.getElementById("total").innerText = "Total: ₹" + total;
+function clearCart() {
+    localStorage.removeItem("cart");
+    loadCart();
 }
 
-if (window.location.pathname.includes("cart.html")) {
-  displayCart();
-}
